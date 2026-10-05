@@ -1,0 +1,27 @@
+# Laravel Specific
+/api-personas/vendor/
+/api-personas/node_modules/
+/api-personas/.env
+/api-personas/.env.backup
+/api-personas/.env.production
+/api-personas/.phpunit.cache
+/api-personas/.phpunit.result.cache
+/api-personas/public/build/
+/api-personas/public/hot
+/api-personas/public/storage
+/api-personas/storage/*.key
+/api-personas/storage/pail/
+/api-personas/storage/logs/*.log
+/api-personas/storage/framework/cache/data/*
+/api-personas/storage/framework/sessions/*
+/api-personas/storage/framework/views/*
+!/api-personas/storage/framework/cache/data/.gitignore
+!/api-personas/storage/framework/sessions/.gitignore
+!/api-personas/storage/framework/views/.gitignore
+
+# System and IDEs
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

@@ -1,0 +1,96 @@
+{
+  "info": {
+    "_postman_id": "c1f7a2d4-1a2b-4e89-9e8a-828271891929",
+    "name": "API Personas - Laravel",
+    "description": "Colección de Postman para la Guía Práctica de Construcción de API REST en Laravel",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Persona (POST /api/personas)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombres\": \"Ana María\",\n  \"apellidos\": \"Gómez Pérez\",\n  \"email\": \"ana.gomez@ejemplo.com\",\n  \"telefono\": \"3001234567\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/personas",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "personas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Test Validación Error 422 (Campos Vacíos)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/personas",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "personas"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
