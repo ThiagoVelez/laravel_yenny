@@ -1,0 +1,95 @@
+{
+  "info": {
+    "_postman_id": "9749319e-1b08-4145-b767-b89da8cdcf1d",
+    "name": "migracion",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57193401",
+    "_collection_link": "https://go.postman.co/collection/57193401-9749319e-1b08-4145-b767-b89da8cdcf1d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "POST personas",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nombres\": \"Ana María\",\n    \"apellidos\": \"Gómez Pérez\",\n    \"email\": \"ana.gomez2@ejemplo.com\",\n    \"telefono\": \"3001234567\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/personas",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "personas"
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST http://127.0.0.1:8000/api/personas -H \"Accept: application/json\""
+      },
+      "response": []
+    },
+    {
+      "name": "POST registro-artistico",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"disciplina_artistica\": \"Danza\", \"nivel_artistico\": \"Intermedio\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/registro-artistico",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "registro-artistico"
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST http://localhost:8000/api/registro-artistico -H \"Content-Type: application/json\" -d '{\"disciplina_artistica\": \"Danza\", \"nivel_artistico\": \"Intermedio\"}'"
+      },
+      "response": []
+    }
+  ]
+}
